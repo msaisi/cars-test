@@ -45,29 +45,31 @@ npm test
 ```
 
 ## Finished WebApp
-_Note:_ Angular App wiil nu on default port _"4200"_ therefore URL will be _"http://localhost:4200"_ ( app_url will be used in place of URL value )
+_Note:_ Angular App wiil nu on default port _"4200"_ therefore URL will be _"http://localhost:4200"_ ( {app_url} will be used in place of URL value )
 
 ### 1. Get all popular makes
 Webpage: 
 ```
-URL _"app_url"_/
+URL {app_url}
 ```
 > Popular Makes Section
 
 ### 2. List all cars + pagination
 Webpage:
 ```
-URL _"app_url"_/listing
+URL {app_url}/listing
 ```
 > Listing section
+
 > Pagination section
 
 ### 3. List car detail page + media
 Webpage:
 ```
-URL _"app_url"_/listing/{carId} 
+URL {app_url}/listing/{carId} 
 ```
 > Listing details section
+
 > Media section
 ```
 
@@ -84,9 +86,14 @@ Vehicle Listing Page: Color codes on availability indicate how 'hot' the deal is
 
 ## To Do
 1. NgRx state magement to avoid multiple API calls for carlist/ brands on different sections of the WebApp (Footer/ Header/ Sidebar)
+2. Implement Search on sidebar + header
 
 ## MyAutochek Web App
 1. Home Page 
-```code
-URL _"app_url"_/
-```
+URL {app_url}/
+
+2. Listing Page 
+URL {app_url}/
+
+2. Listing Page Details 
+URL {app_url}/{carId}
