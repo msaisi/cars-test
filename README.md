@@ -1,17 +1,16 @@
 # MyAutochek App
 This is an Angular Web App that consumes specific myautochek API to consume cars & models as well as car media.
 
-Design Template: <https://w3layouts.com/template/electro-store-an-ecommerce-theme-bootstrap-template/>
+Design Template: 
+- <https://w3layouts.com/template/electro-store-an-ecommerce-theme-bootstrap-template/>
 
 APIs:
-● Get all popular makes: <https://api.staging.myautochek.com/v1/inventory/make?popular=true>
-● List all cars (paginated): <https://api.staging.myautochek.com/v1/inventory/car/search>
-● List car detail page: <https://api.staging.myautochek.com/v1/inventory/car/{carId>}.
-● Get Car media: <https://api.staging.myautochek.com/v1/inventory/car_media?carId={carId>}
-
+-  Get all popular makes: <https://api.staging.myautochek.com/v1/inventory/make?popular=true>
+-  List all cars (paginated): <https://api.staging.myautochek.com/v1/inventory/car/search>
+-  List car detail page: <https://api.staging.myautochek.com/v1/inventory/car/{carId>}.
+-  Get Car media: <https://api.staging.myautochek.com/v1/inventory/car_media?carId={carId>}
 
 ## Dev Dependencies
-
 1. jQuery Types (@types/jquery) -  I also had to add the jquery type to tsconfig file to use jQuery definitions in Angular components
 2. NgX Pagination (ngx-pagination) - for listing pagination
 3. Angular 13 (tested on local only)
@@ -52,25 +51,23 @@ Webpage:
 ```
 URL {app_url}
 ```
-> Popular Makes Section
+- Popular Makes Section
 
 ### 2. List all cars + pagination
 Webpage:
 ```
 URL {app_url}/listing
 ```
-> Listing section
-
-> Pagination section
+- Listing section
+- Pagination section
 
 ### 3. List car detail page + media
 Webpage:
 ```
 URL {app_url}/listing/{carId} 
 ```
-> Listing details section
-
-> Media section
+- Listing details section
+- Media section
 ```
 
 
