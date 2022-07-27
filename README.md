@@ -44,7 +44,8 @@ npm test
 ```
 
 ## Finished WebApp
-_Note:_ Angular App wiil nu on default port _"4200"_ therefore URL will be _"http://localhost:4200"_ ( {app_url} will be used in place of URL value )
+_Note:_ Angular App will run on default port _"4200"_ therefore URL will be _"http://localhost:4200"_ ( {app_url} will be used in place of URL value )
+Note: The above is only true if agular app is not served under aspecific port  i.e. _"ng serve --port=5200"_ which will force the URL port to change accordingly
 
 ### 1. Get all popular makes
 Webpage: 
@@ -77,7 +78,7 @@ URL {app_url}/listing/{carId}
 
 Due to the above challenge, I could not 100% implement page navigation functionality.
 3. **General**:
-Vehicle Listing Page: Color codes on availability indicate how 'hot' the deal is basd on 'gradeScore' -> actual code functionality has not been implemented since I am not aware of the perfect scope value.
+Vehicle Listing Page: Color codes on availability indicate how 'hot' the deal is or quality/ rating of the listing based on 'gradeScore' -> actual code functionality has not been implemented since I am not aware of the perfect scope value.
 
 ## To Do
 1. NgRx state magement to avoid multiple API calls for carlist/ brands on different sections of the WebApp (Footer/ Header/ Sidebar)
