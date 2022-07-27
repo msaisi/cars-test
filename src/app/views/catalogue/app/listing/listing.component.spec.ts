@@ -28,7 +28,7 @@ describe('ListingComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create component that render show paginated car listing', () => {
     expect(component).toBeTruthy();
   });
 

@@ -7,7 +7,7 @@ describe('SharedModule', () => {
     sharedModule = new SharedModule();
   });
 
-  it('should create an instance', () => {
+  it('should create a modue instance that provides exportable shared components for use in components', () => {
     expect(sharedModule).toBeTruthy();
   });
 });

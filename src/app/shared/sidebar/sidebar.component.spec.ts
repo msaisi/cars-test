@@ -23,7 +23,7 @@ describe('SidebarComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create sidebar component that will be shared accross different HTML pages', () => {
     expect(component).toBeTruthy();
   });
 });

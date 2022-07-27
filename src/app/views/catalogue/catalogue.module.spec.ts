@@ -7,7 +7,7 @@ describe('CatalogueModule', () => {
     catalogueModule = new CatalogueModule();
   });
 
-  it('should create an instance', () => {
+  it('should create a module instance that will have cars and car details components. This module will be lazy loaded', () => {
     expect(catalogueModule).toBeTruthy();
   });
 });

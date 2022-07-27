@@ -25,7 +25,7 @@ describe('ListingDetailsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create a component that will render car details', () => {
     expect(component).toBeTruthy();
   });
 

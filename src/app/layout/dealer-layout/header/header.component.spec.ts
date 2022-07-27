@@ -26,7 +26,7 @@ describe('HeaderComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create layout header component', () => {
     expect(component).toBeTruthy();
   });
 });

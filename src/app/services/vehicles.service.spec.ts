@@ -20,7 +20,7 @@ describe('VehiclesService', () => {
     service = TestBed.inject(VehiclesService);
   });
 
-  it('should be created', () => {
+  it('should be created consume vehicles API', () => {
     expect(service).toBeTruthy();
   });
 });

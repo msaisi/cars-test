@@ -7,7 +7,7 @@ describe('HomeModule', () => {
     homeModule = new HomeModule();
   });
 
-  it('should create an instance', () => {
+  it('should create a module instance that will have home component. This module will be lazy loaded', () => {
     expect(homeModule).toBeTruthy();
   });
 });

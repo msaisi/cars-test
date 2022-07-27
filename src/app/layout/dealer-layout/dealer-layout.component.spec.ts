@@ -35,7 +35,7 @@ describe('DealerLayoutComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create theme layout', () => {
     expect(component).toBeTruthy();
   });
 });
