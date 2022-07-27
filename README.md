@@ -98,5 +98,5 @@ URL {app_url}/
 2. Listing Page 
 URL {app_url}/
 
-2. Listing Page Details 
+3. Listing Page Details 
 URL {app_url}/{carId}
