@@ -13,7 +13,7 @@ APIs:
 ## Dev Dependencies
 1. jQuery Types (@types/jquery) -  I also had to add the jquery type to tsconfig file to use jQuery definitions in Angular components
 2. NgX Pagination (ngx-pagination) - for listing pagination
-3. Angular 13 (tested on local only)
+3. Angular 13 (only tested on local environment)
 
 ## How to run
 1. Git clone the repo
