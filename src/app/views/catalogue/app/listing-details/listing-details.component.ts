@@ -181,7 +181,7 @@ export class ListingDetailsComponent implements OnInit, AfterViewInit {
       url: "car_media"
     };
 
-    let filters = { filters: { carId: car_id, type: 'video' } };
+    let filters = { filters: { carId: car_id } };
 
     this.vehicleService.setLookupParams(lookup);
     this.vehicleService.getRecordSearch(filters).subscribe(media => {
@@ -198,8 +198,17 @@ export class ListingDetailsComponent implements OnInit, AfterViewInit {
 
       //add media images based on image type
       media.carMediaList.forEach((el: any, index: number) => {
-        let media_type = el.type === 'image' ? 'image' : 'video';
+        //set default container
 
+        //let media_type = el.type.includes("image") ? 'image' : 'video';
+
+        let media_type = "image";
+        if (el.type.includes("video")) {
+          media_type = "video";
+        }
+        /*if (el.type.includes("image")) {
+          media_type = "image";
+        }*/
         media_items.push(
           {
             name: el.name ? el.name : "default-" + media_type + "-" + index,
@@ -210,7 +219,7 @@ export class ListingDetailsComponent implements OnInit, AfterViewInit {
       });
 
       // sim video data
-      media_items.push(
+      /*media_items.push(
         {
           name: "video-placeholder-1",
           type: "video",
@@ -221,7 +230,7 @@ export class ListingDetailsComponent implements OnInit, AfterViewInit {
           type: "video",
           url: "http://player.vimeo.com/video/732610911?api=1"
         }
-      );
+      );*/
 
 
       this._carMedia = media_items;
@@ -274,6 +283,10 @@ export class ListingDetailsComponent implements OnInit, AfterViewInit {
     },*/
     });
 
+  }
+
+  vehicleInquire() {
+    alert("to complete code section...");
   }
 
 

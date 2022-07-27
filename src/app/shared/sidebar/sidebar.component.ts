@@ -14,6 +14,7 @@ export class SidebarComponent implements OnInit {
   pagination: QueryParamsModel = new QueryParamsModel();
   search_brands: Observable<any[]> = of([]);
   top_selling: Observable<any[]> = of([]);
+  _currency: string = "Kes ";
 
   constructor(
     private makeService: MakesService,

@@ -76,14 +76,12 @@ URL {app_url}/listing/{carId}
 2. **Task 2: List all cars:** For pagination, it was not easy to figure out which attributes to pass for query parmeters. I managed to figure out 'pageSize' for page size but I could not get anything for page number.
 
 Due to the above challenge, I could not 100% implement page navigation functionality.
-3. **Task 4: Get Car media:**:
-All available media for cars during dev were of type 'image' only. I could not get any for type 'video' so to showcase video capabilities I manually add added two entries to simulate that.
-4. **General**:
+3. **General**:
 Vehicle Listing Page: Color codes on availability indicate how 'hot' the deal is basd on 'gradeScore' -> actual code functionality has not been implemented since I am not aware of the perfect scope value.
 
 ## To Do
 1. NgRx state magement to avoid multiple API calls for carlist/ brands on different sections of the WebApp (Footer/ Header/ Sidebar)
-2. Implement Search on sidebar + header
+2. Implement Search on sidebar + header as well as sidebar filtering
 
 ## MyAutochek Web App
 1. Home Page 

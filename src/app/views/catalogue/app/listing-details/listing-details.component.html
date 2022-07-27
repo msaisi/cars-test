@@ -53,7 +53,7 @@
           <label> {{ !_vehicle.sold? 'Available' : 'Sold' }}</label>
         </p>
 
-        <div class="mt-2 mb-2">
+        <div class="mt-2 mb-2" *ngIf="_vehicle.hasFinancing=== true">
           <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#carFinancedDetails"
             aria-expanded="false" aria-controls="carFinancedDetails">
             View Financed Plan
@@ -155,10 +155,10 @@
             </li>
 
             <li class="mb-3">
-              <b>Owner Type:</b> {{ _vehicle.ownerType | titlecase }}
+              <b>Owner Type:</b> {{ (_vehicle.ownerType | titlecase) || 'n/a' }}
             </li>
             <li class="mb-3">
-              <b>Selling Condition:</b> {{ _vehicle.sellingCondition | titlecase }}
+              <b>Selling Condition:</b> {{ (_vehicle.sellingCondition | titlecase) || 'n/a' }}
             </li>
 
           </ul>
@@ -197,7 +197,7 @@
               <h2>Interior Color</h2>{{ _vehicle.interiorColor }}
             </li>
             <li class="col-md-4 mb-3">
-              <h2>Registered</h2>{{ _vehicle.year}}
+              <h2>Registered</h2>{{ _vehicle.year }}
             </li>
             <li class="col-md-4 mb-3">
               <h2>Wheel Type</h2>{{ _vehicle.model?.wheelType || 'n/a'}}
@@ -223,8 +223,9 @@
         <div class="occasion-cart mt-4">
           <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
 
-            <a class="btn button" href="#">Send Message
-            </a>
+            <button class="btn btn-primary" type="button" (click)="vehicleInquire()">
+              Send Message
+            </button>
             <!--<form action="#" method="post">
               <fieldset>
                 <input type="hidden" name="cmd" value="_cart" />
