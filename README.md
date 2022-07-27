@@ -27,20 +27,25 @@ cd cars-test && npm install
 ```
 
 3. Start the App
-> In Production
+> npm command
 ```**bash**
 npm start
 ```
-> In Development Mode
+> ng command
 ```bash
-npm run start-dev
+ng serv
 ```
 
 ## Running Tests
 > Tests are implemented with Jasmine which comes inbuilt with Angular Framework.
 **Note:** Close the app  first, if you had been running it before to avoid getting the error _"Port 9876 is already in use"_
+> npm command
 ```bash
 npm test
+```
+> ng command
+```bash
+ng test
 ```
 
 ## Finished WebApp
