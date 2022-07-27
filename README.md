@@ -1,4 +1,4 @@
-# MyAutochek App
+# Autochek App
 This is an Angular Web App that consumes specific myautochek API to consume cars & models as well as car media.
 
 Design Template: 
@@ -51,6 +51,7 @@ ng test
 
 ## Finished WebApp
 _Note:_ Angular App will run on default port _"4200"_ therefore URL will be _"http://localhost:4200"_ ( {app_url} will be used in place of URL value )
+
 Note: The above is only true if agular app is not served under aspecific port  i.e. _"ng serve --port=5200"_ which will force the URL port to change accordingly
 
 ### 1. Get all popular makes
@@ -90,7 +91,7 @@ Vehicle Listing Page: Color codes on availability indicate how 'hot' the deal is
 1. NgRx state magement to avoid multiple API calls for carlist/ brands on different sections of the WebApp (Footer/ Header/ Sidebar)
 2. Implement Search on sidebar + header as well as sidebar filtering
 
-## MyAutochek Web App
+## Autochek Web App
 1. Home Page 
 URL {app_url}/
 
