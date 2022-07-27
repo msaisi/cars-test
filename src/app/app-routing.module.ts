@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DealerLayoutComponent } from './layout/dealer-layout/dealer-layout.component';
-//import { HomeComponent } from './views/home/home.component';
-//import { ListingDetailsComponent } from './views/listing-details/listing-details.component';
-//import { ListingComponent } from './views/listing/listing.component';
 
+//lazyload modules
 const routes: Routes = [
 
   {

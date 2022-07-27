@@ -20,7 +20,7 @@ describe('MakesService', () => {
     service = TestBed.inject(MakesService);
   });
 
-  it('should be created to consume makes API', () => {
+  it('should be created to consume makes API to get popular brands/ makes', () => {
     expect(service).toBeTruthy();
   });
 });

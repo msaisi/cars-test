@@ -20,7 +20,7 @@ describe('BaseService', () => {
     service = TestBed.inject(BaseService);
   });
 
-  it('should be created to generate query parameters from function input values', () => {
+  it('should be created to generate query parameters from objects', () => {
     expect(service).toBeTruthy();
   });
 });
